@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Email Sending Form:</h1>
+    <form method="post">
+      {% csrf_token %}
+      Subject:<input type="text" name="subject" value=""><br><br>
+      Content:<input type="text" name="content" value=""><br><br>
+      <input type="submit" name="" value="Send Mail">
+    </form>
+  </body>
+</html>
